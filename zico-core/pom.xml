@@ -13,12 +13,12 @@
         <dependency>
             <groupId>com.jitlogic.zorka</groupId>
             <artifactId>zorka-common</artifactId>
-            <version>${project.version}</version>
+            <version>1.0.11</version>
         </dependency>
         <dependency>
             <groupId>com.jitlogic.zorka</groupId>
             <artifactId>zorka-common-test</artifactId>
-            <version>${project.version}</version>
+            <version>1.0.11</version>
             <scope>test</scope>
         </dependency>
         <dependency>

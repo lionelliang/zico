@@ -94,6 +94,7 @@ public class ZicoServerConnector extends ZicoConnector implements Runnable {
                 if (context != null) {
                     for (Object o : ZicoCommonUtil.unpack(pkt.getData())) {
                         context.process(o);
+                        log.info("fuliang: "+ o.toString());
                     }
                     context.commit();
                     send(ZICO_OK);

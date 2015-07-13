@@ -213,7 +213,8 @@ public class HostStore implements Closeable, RDSCleanupListener {
         }
 
         TraceRecordStore.ChunkInfo dchunk = traceDataStore.write(rec);
-
+        //log.info("fuliang: "+ rec.toString());
+        
         List<TraceRecord> tmp = rec.getChildren();
 
         int numRecords = ZicoUtil.numRecords(rec);
@@ -229,7 +230,9 @@ public class HostStore implements Closeable, RDSCleanupListener {
                 rec.getAttrs() != null ? ZicoUtil.toIntArray(rec.getAttrs().keySet()) : null);
 
         checkAttrs(tir);
-
+        
+        //log.info("fuliang: "+ tir.toString());
+        
         infos.put(tir.getDataOffs(), tir);
 
         int traceId = tir.getTraceId();

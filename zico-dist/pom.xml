@@ -58,7 +58,7 @@
                                       toDir="${project.build.outputDirectory}/zico-${project.version}"/>
                                 <copy file="src/logback.xml"
                                       toDir="${project.build.outputDirectory}/zico-${project.version}"/>
-                                <copy file="../../zorka/zorka-agent/target/zorka-agent-${project.version}.jar"
+                                <copy file="../../zorka/zorka-agent/target/zorka-agent-1.0.11.jar"
                                       toFile="${project.build.outputDirectory}/zico-${project.version}/zorka.jar"/>
                                 <copy file="../CHANGES.md"
                                       toDir="${project.build.outputDirectory}/zico-${project.version}"/>
